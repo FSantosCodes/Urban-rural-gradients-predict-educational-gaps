@@ -15,7 +15,7 @@ if(length(new.packages)){install.packages(new.packages,dependencies = T)}
 lapply(list.of.packages, require, character.only = T)
 ```
 
-Also for reproducibility **seed.seed** is required
+Also for reproducibility **seed.seed** is also required
 
 ```{r eval=FALSE}
 #favorite random number
