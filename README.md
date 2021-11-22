@@ -4,7 +4,7 @@ This is the repository for the code and data used in the publicacion "". Here, w
 
 ## R Enviroment
 
-Required R libraries are installed or load with:
+Required R libraries are installed or loaded into the environment with:
 
 ```{r eval=FALSE}
 #install or read libraries
@@ -15,7 +15,7 @@ if(length(new.packages)){install.packages(new.packages,dependencies = T)}
 lapply(list.of.packages, require, character.only = T)
 ```
 
-Also for reproducibility seed.seed is required
+Also for reproducibility **seed.seed** is required
 
 ```{r eval=FALSE}
 #favorite random number
