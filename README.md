@@ -1,6 +1,6 @@
-# Urban-rural-gradients-predict-educational-gaps
+## Urban-rural-gradients-predict-educational-gaps
 
-## R ENVIRONMENT
+# R ENVIRONMENT
 
 Required R libraries are installed or load into environment below:
 
