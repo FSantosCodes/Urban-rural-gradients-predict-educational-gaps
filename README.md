@@ -12,3 +12,10 @@ new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"
 if(length(new.packages)){install.packages(new.packages,dependencies = T)}
 lapply(list.of.packages, require, character.only = T)
 ```
+
+Also for reproducibility seed.seed is required
+
+```{r eval=FALSE}
+#favorite random number
+set.seed(666)
+```
