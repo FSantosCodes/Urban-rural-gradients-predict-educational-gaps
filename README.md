@@ -1,8 +1,8 @@
 # Urban–rural gradients predict educational gaps: Evidence from a machine learning approach, involving academic performance and impervious surfaces in Ecuador
 
-author: "Fabián Santos, Phd."
+Fabián Santos, Phd.
 
-date: "11/22/2021"
+11/22/2021
 
 ## 1. INTRODUCTION
 
