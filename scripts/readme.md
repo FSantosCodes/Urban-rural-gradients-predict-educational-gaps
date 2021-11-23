@@ -1,14 +1,3 @@
----
-title: "Boruta implementation for the BCH instrument"
-author: "Fabián Santos, Phd."
-date: "11/22/2021"
-output: html_document
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
 ## 1. INTRODUCTION
 
 This report describes the algorithm implementation for feature analysis of the Be Bachelor (BCH) instrument [INEVAL](http://evaluaciones.evaluacion.gob.ec/BI/bases-de-datos-ser-bachiller/), using [Boruta](https://www.jstatsoft.org/article/view/v036i11) and [Random Forest](https://link.springer.com/article/10.1023/a:1010933404324) algorithms.
