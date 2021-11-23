@@ -1,10 +1,8 @@
 # Urban–rural gradients predict educational gaps: Evidence from a machine learning approach, involving academic performance and impervious surfaces in Ecuador
----
-title: "Boruta implementation for the BCH instrument"
+
 author: "Fabián Santos, Phd."
+
 date: "11/22/2021"
-output: html_document
----
 
 ## 1. INTRODUCTION
 
