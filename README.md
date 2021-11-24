@@ -14,7 +14,7 @@ This report describes the algorithm implementation described in the publication 
 * /shp: a set of shapefiles for facilitate mapping of the algorithm outputs; and
 * /shiny: a web app to visualize outputs using the shiny technology. 
 
-The next section describes with detail each code chunk of the scripts, which implements the algorithm described in the publication.<
+The next section describes with detail each code chunk of the scripts, which implements the algorithm described in the publication.
 
 ## 2. R ENVIROMENT
 
