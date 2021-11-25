@@ -12,14 +12,14 @@ set.seed(666)
 ######### PROCESS INEVAL HSCH, MCRO & AFAC DATABASES 2016-2017 ######### 
 
 #input high schools (HSCH) shapefile
-ins_base <- "E:/DATA/Ineval/2_institucion_Base16/shp/amieactivas_ciclo15_16.shp"
+ins_base <- "./amieactivas_ciclo15_16.shp"
 #input micro (MCRO) anf fa (AFAC) excel databases. Check below "PREPARE..." for specific variable removed due duplication or uninformative data.
-micro_base <- "E:/DATA/Ineval/2_institucion_Base16/raw/Micro/SBAC17_micro_627960_20180426_XLS.xlsx"
-fa_base <- "E:/DATA/Ineval/2_institucion_Base16/raw/FA/SBAC17_faestudiantes_627960_20180307_XLS.xlsx"
+micro_base <- "./SBAC17_micro_627960_20180426_XLS.xlsx"
+fa_base <- "./SBAC17_faestudiantes_627960_20180307_XLS.xlsx"
 #input fa (AFAC) excel dictionary
-fa_dic <- "E:/DATA/Ineval/2_institucion_Base16/raw/FA/SBAC17_diccionariofaestudiantes_1188_20180307_DIC.xlsx"
+fa_dic <- "./SBAC17_diccionariofaestudiantes_1188_20180307_DIC.xlsx"
 #save folder
-output_folder <- "E:/DATA/Ineval/2_institucion_Base16/runs/20_paper/SC"
+output_folder <- "./SC"
 #AP score column name, cutpoints and labels (+1)
 AP_var <- "Notaexamendegrado"
 AP_cut <- 7
