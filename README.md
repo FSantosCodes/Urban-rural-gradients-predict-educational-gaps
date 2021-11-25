@@ -6,15 +6,16 @@ Fabián Santos, Phd.
 
 ## 1. INTRODUCTION
 
-This report describes the algorithm implementation described in the publication Urban–rural gradients predict educational gaps: Evidence from a machine learning approach, involving academic performance and impervious surfaces in Ecuador. The algorithm implements a feature analysis in the Be Bachelor (BCH) instrument [INEVAL](http://evaluaciones.evaluacion.gob.ec/BI/bases-de-datos-ser-bachiller/), using [Boruta](https://www.jstatsoft.org/article/view/v036i11) and [Random Forest](https://link.springer.com/article/10.1023/a:1010933404324) algorithms.  To organize this report, a description of the folders and uploaded files is explained here: 
+This report describes the algorithm implementation described in the publication: "Urban–rural gradients predict educational gaps: Evidence from a machine learning approach, involving academic performance and impervious surfaces in Ecuador". In this research, a feature analysis combining [Boruta](https://www.jstatsoft.org/article/view/v036i11) and backward elimination are used to identify the best predictors and optimize [Random forest](https://link.springer.com/article/10.1023/a:1010933404324). This is done for explain academic performance (AP) scores, using high schools locations and their students´ answers to a questionnaire-based survey (See: [INEVAL](http://evaluaciones.evaluacion.gob.ec/BI/bases-de-datos-ser-bachiller/)), handling them as individual cases for facilitate mapping and allow a correlation analysis with an impervious surfaces map.
+
+To organize this report, first is here described the folders and uploaded files: 
 
 * /scripts: includes three R scripts with the specific parameters to analyze the theme groups described in the publication (AE: academic environment; SC: socio economic and cultural; and CS: cognitive skills);
 * /data_inputs: includes the input data files used in the processing of each themes groups;
-* /data_outputs: here is uploaded the resulting R environment (.Rdata) after processing with the R scripts. It is also included a subfolder of the produced csv files during computation;
-* /shp: a set of shapefiles for facilitate mapping of the algorithm outputs; and
-* /shiny: a web app to visualize outputs using the shiny technology. 
+* /data_outputs: here is uploaded the resulting R environment (.Rdata) after processing with the R scripts. It is also included a subfolder of the produced .csv   and .shp files produced after processing; and
+* /shiny: a web app to visualize outputs using the Shiny technology (RStudio, 2020). 
 
-The next section describes with detail each code chunk of the scripts, which implements the algorithm described in the publication.
+The next sections describes with detail the structure and relevant sections of the script, using as example the Academic Environment (AE) theme group.
 
 ## 2. R ENVIROMENT
 
