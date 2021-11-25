@@ -52,7 +52,7 @@ but lastly HSCH is now located at:
 
 2. https://iedg.sni.gob.ec/geoportal-iedg/documentos/Establecimientos%20Educativos.zip
 
-Note that updates of these datasets may affect the scripts as it is not prepared for changes in their format and structure. 
+Note that updates of these datasets may affect the script as it is not prepared for changes in their format and structure. 
 
 To configure these data inputs in the algorithm, they should be specified as:
 
