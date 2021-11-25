@@ -12,7 +12,7 @@ To organize this report, we first describe where to get input and output files, 
 
 * **data inputs**: this [link](https://indoamerica-my.sharepoint.com/:f:/g/personal/ernestosantos_uti_edu_ec/EiuLcuHXu9JNg_kiPRIeIMoBZsCIi6rX7lcHcH4n90RhNQ?e=faBYdd) allows to download data input files. These includes the HSCH, MCRO and AFAC databases;
 * **data outputs**: this [link](https://indoamerica-my.sharepoint.com/:f:/g/personal/ernestosantos_uti_edu_ec/Elu3MiDn9Y1MlC2ZSf2sUoMB0VCDxWrewJBE4S43Jiy0Zg?e=2Xs7K8) allows to download data output files, organized by theme groups described in the publication (AE: academic environment; SC: socio economic and cultural; and CS: cognitive skills). These files include the resulting R environment (.Rdata), a sample of the iteration files (.csv) and shapefiles (.shp) produced during processing;
-* **scripts**: located in this repository, it contains the three scripts used for processing of the theme groups; and
+* **scripts**: located in this repository, it contains the scripts used for processing of three theme groups; and
 * **shinyApp**: located in this repository, it includes the source code of the web app for visualize outputs.
 
 The next sections describes with detail the structure and relevant sections of the script, using as example the Academic Environment (AE) theme group.
