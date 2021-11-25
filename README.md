@@ -974,4 +974,4 @@ shapefile(ins.cross,out.name,overwrite=T)
 
 ## 8. CLOSING REMARKS
 
-The algorithm processing is demanding and users should be proceed with caution since large computations can fail (we experience a recursive interruption after ~2500 iterations without an explanation but it is suspicious a RAM overflow or a CPU temperature breakpoint). Therefore, it is important to monitor processed .csv files to advice the last processing point and restart processing. If users that require an update or help using this routine can email  **fabian_santos_@hotmail.com** to discuss possibilities.
+The algorithm processing is demanding and users should be proceed with caution since large computations can fail (we experience a recursive interruption after ~2500 iterations without an explanation but it is suspicious a RAM overflow or a CPU temperature breakpoint). Therefore, it is important to monitor processed .csv files to advice the last processing point and restart processing. If users that require an update or help using this routine can email  **fabian_santos_@hotmail.com** to discuss a collaboration.
