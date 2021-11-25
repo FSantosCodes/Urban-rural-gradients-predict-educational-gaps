@@ -18,7 +18,7 @@ To organize this report, we first describe where to get input and output files, 
 
 * **shinyApp**: located in this repository, this folder contains the source code of the web app used for visualize outputs.
 
-The next sections describes with detail the structure and relevant sections of the scripts, using as example the Academic Environment (AE) theme group.
+The next sections describes with detail the structure and relevant code chunks of the scripts, using as example the Academic Environment (AE) theme group.
 
 ## 2. R ENVIROMENT
 
