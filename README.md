@@ -10,10 +10,10 @@ This report describes the algorithm implementation described in the publication:
 
 To organize this report, first is here described the folders and uploaded files: 
 
-* /scripts: includes three R scripts with the specific parameters to analyze the theme groups described in the publication (AE: academic environment; SC: socio economic and cultural; and CS: cognitive skills);
-* /data_inputs: includes the input data files used in the processing of each themes groups;
-* /data_outputs: here is uploaded the resulting R environment (.Rdata) after processing with the R scripts. It is also included a subfolder of the produced .csv   and .shp files produced after processing; and
-* /shiny: a web app to visualize outputs using the Shiny technology (RStudio, 2020). 
+* **/scripts**: includes three R scripts with the specific parameters to analyze the theme groups described in the publication (AE: academic environment; SC: socio economic and cultural; and CS: cognitive skills);
+* **/data_inputs**: includes the data input files used in the processing of each themes groups;
+* **/data_outputs**: includes the resulting R environment (.Rdata) after processing with the three R scripts. Here, it is also included the produced .csv and .shp files produced during processing; and
+* **/shiny**: includes the source code of the web app using the Shiny technology (RStudio, 2020) for visualize outputs.
 
 The next sections describes with detail the structure and relevant sections of the script, using as example the Academic Environment (AE) theme group.
 
