@@ -8,12 +8,12 @@ Fabián Santos, Phd.
 
 This report describes the algorithm implementation described in the publication: "Urban–rural gradients predict educational gaps: Evidence from a machine learning approach, involving academic performance and impervious surfaces in Ecuador". In this research, a feature analysis combining the Boruta algorithm [(Kursa & Rudnicki, 2010)](https://doi.org/10.18637/jss.v036.i11) and backward elimination are used to identify the best predictors and optimize the Random Forest algorithm [(Breiman, 2001)](https://doi.org/10.1023/A:1010933404324). This is done for explain academic performance (AP) scores, using high schools locations and their students´ answers to a questionnaire-based survey (See: [INEVAL](http://evaluaciones.evaluacion.gob.ec/BI/bases-de-datos-ser-bachiller/)). Handling them as individual cases, this enabled  to map prediction probabilities and conduct a correlation analysis with an impervious surfaces map [(Gong et al., 2020)](https://doi.org/10.1016/j.rse.2019.111510) to derive our conclusions.
 
-To organize this report, first the folders and uploaded files are described: 
+To organize this report, we first describe where to get input and output files, as well as the folders contained in this repository for store the R scripts and the shiny apps: 
 
-* **/scripts**: includes three R scripts with the specific parameters to analyze the theme groups described in the publication (AE: academic environment; SC: socio economic and cultural; and CS: cognitive skills);
-* **/data_inputs**: includes the data input files used in the processing of each theme groups;
-* **/data_outputs**: includes the resulting R environment (.Rdata) after processing with the three R scripts. Here, it is also included the produced .csv and .shp files produced during processing; and
-* **/shiny**: includes the source code of the web app using the Shiny technology (RStudio, 2020) for visualize outputs.
+* **data inputs**: the next [link](https://indoamerica-my.sharepoint.com/:f:/g/personal/ernestosantos_uti_edu_ec/EiuLcuHXu9JNg_kiPRIeIMoBZsCIi6rX7lcHcH4n90RhNQ?e=faBYdd) allows to download all data input files. These includes the HSCH, MCRO and AFAC databases;
+* **data outputs**: the next [link](https://indoamerica-my.sharepoint.com/:f:/g/personal/ernestosantos_uti_edu_ec/Elu3MiDn9Y1MlC2ZSf2sUoMB0VCDxWrewJBE4S43Jiy0Zg?e=2Xs7K8) allos to download all data output files, organized by theme groups described in the publication (AE: academic environment; SC: socio economic and cultural; and CS: cognitive skills). These files include the resulting R environment (.Rdata), a sample of the iteration files (.csv) and shapefiles (.shp) produced during processing
+* **scripts**: 
+* **shinyApp**: includes the source code of the web app using the Shiny technology (RStudio, 2020) for visualize outputs.
 
 The next sections describes with detail the structure and relevant sections of the script, using as example the Academic Environment (AE) theme group.
 
