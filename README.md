@@ -15,7 +15,7 @@ To organize this report, we first describe where to get input and output files, 
 * **scripts**: located in this repository, it contains the scripts used for processing of three theme groups; and
 * **shinyApp**: located in this repository, it includes the source code of the web app for visualize outputs.
 
-The next sections describes with detail the structure and relevant sections of the script, using as example the Academic Environment (AE) theme group.
+The next sections describes with detail the structure and relevant sections of the scripts, using as example the Academic Environment (AE) theme group.
 
 ## 2. R ENVIROMENT
 
