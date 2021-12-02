@@ -816,7 +816,7 @@ The last steps constitutes the storage of outputs. First, clock is stopped to me
 * acc_(iteration number).csv: refers to accuracy metrics and prediction probabilities for each AP class;
 * des_(iteration number).csv: refers to socio-economic among other statistics calculated for each high school;
 * lkn_(iteration number).csv: refers to some statistics derived from spatial sampling; and
-* cross_(iteration number).csv: refers to the cross validation test results. For more information please see: [rfcv](http://127.0.0.1:21781/library/randomForest/html/rfcv.html)
+* cross_(iteration number).csv: refers to the cross validation test results. For more information please see the help document of [rfcv](http://127.0.0.1:21781/library/randomForest/html/rfcv.html) function, which is part of the RandomForest library
 
 ```{r eval=F}
     ##### 7) save iteration results   #####
