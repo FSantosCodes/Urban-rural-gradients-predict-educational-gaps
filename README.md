@@ -865,7 +865,7 @@ To end parallel processing when all the high schools´cases are computed, the ne
 
 ## 7. COMPILATION OF RESULTS - END OF THE SCRIPT
 
-When all results are computed, the next final code chunk is applied. It first open the /iter folder at the **output_folder** which is defined at the begining of the script to compile csv files into a unique database. This is used to distribute data among high school cases but as spatial points to facilitate mapping and analysis in a geographical information systems, such as [QGIS](https://qgis.org/en/site/). Note that if the parameter **processing** is set FALSE, this part of the script will be executed directly avoiding the processing, which can take around ~9.5 for 3321 high school cases.
+When all results are computed, the next final code chunk is applied. It first open the /iter folder at the **output_folder** which is defined at the begining of the script to compile csv files into a unique database. This is used to distribute data among high school cases but as spatial points to facilitate mapping and analysis in a geographical information systems, such as [QGIS](https://qgis.org/en/site/). Note that if the parameter **processing** is set FALSE, this part of the script will be executed directly avoiding the processing, which can take around ~9.5 hours for 3321 high school cases.
 
 ```{r eval=F}
 #read high schools shapefile
