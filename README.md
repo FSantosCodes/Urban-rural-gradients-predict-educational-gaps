@@ -76,7 +76,7 @@ An empty output folder is also required but note that here is specified as "AE" 
 output_folder <- "E:/DATA/Ineval/outputs/AE"
 ```
 
-Additional parameters are required. First are those needed for define high and low academic performance (AP):
+Additional parameters are required. First are those needed for define high and low academic performance (AP) classes based in a score threshold:
 
 ```{r eval=F}
 #AP score column name (it should be numeric)
