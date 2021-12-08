@@ -165,7 +165,7 @@ if(processing){
 }
 ```
 
-Third, we now describe processing of MCRO. This dataset is an excel file, which is stored in the first sheet. Note that it is read from thee second row, due it contains the column names. As in this database contains irrelevant variables, we removed those repetitive or not interesting for our investigation. After database reading, it is filtered to the surveyed student population, as not all records are complete or refer to our focus group. Advice that last line of this code chunk is used to classify AP scores into the "low" and "high" AP classes.
+Third, we now describe processing of MCRO. This dataset is an excel file, which is stored in the first sheet. Note that it is read from the second row, due this one contains the column names. As this database contains irrelevant variables, we removed those repetitive or not interesting for our investigation. After database reading, it is filtered to the surveyed student population (Tipodepoblacion=="ESCOLAR"), as not all records are complete or refer to our focus group. Advice that last line of this code chunk is used to classify AP scores into the "low" and "high" AP classes.
 
 
 ```{r eval=F}
@@ -221,7 +221,7 @@ if(processing){
 }
 ```
 
-Fourth, we now describe the processing and preparison of the AFAC database. As this database is large, it takes some minutes to open it (~15-20 min.). As we aimed variables of the AE theme group, all the rest are removed in the first lines of code. Observe that variables "etnibbe" and "ncelcbe" are preserved since they were used for some descriptive statistics in a later section. After reading, a similar filtering procedure to MCRO dabase is applied to select surveyed student population. Finally, as some answer to survey questions were uninformative (e.g. I dont´t know), they were identified to exclude from our analysis in a later step.
+Fourth, we now describe the processing and preparison of the AFAC database. As this database is large, it takes some minutes to open (~15-20 min.). As we aimed variables of the AE theme group, all the rest are removed in the first lines of code. Observe that variables "etnibbe" and "ncelcbe" are preserved since they were used for some descriptive statistics in a later section. After reading, a similar filtering procedure to MCRO dabase is applied to select surveyed student population (poblacion=="ESCOLAR"). Finally, as some answers to survey questions were uninformative (e.g. 'no sé'), they were identified to exclude from our analysis.
 
 ```{r eval=F}
 
@@ -344,7 +344,7 @@ dummyVars.extract <- function(x){
 }
 ```
 
-The next function is designed to split data features from MCRO and AFAC databases, since some from the first case are used for descriptive statistics, while the second are used for feature analysis. 
+The next function is designed to split data features from MCRO and AFAC databases. In the first case, all of them are used for descriptive statistics, while the second are used for feature analysis with Boruta. 
 
 ```{r eval=F}
 prepare.data<- function(x,collect=T){
@@ -402,7 +402,7 @@ prepare.data<- function(x,collect=T){
 }
 ```
 
-Now, we describe the main function for feature analysis. This includes the execution of Boruta (multiple times if the first try do not give an answer), accompained by the **TentativeRoughFix** to unjam it in complex cases. The latter simplifies feature selection significance test when Boruta cannot give a proper solution. After these steps, the random forest (RF) algorithm is executed. This is done thought the ranger library, which implements an efficient version of RF. Note that it is executed with the "confirmed" important features identified by Boruta and variables importance scores is derived in this step (via permutation). After that, class probabilities are also calculated and extracted from the RF model to end the pipeline collecting accuracy metrics and cross validation test resultas. In exceptional cases Boruta, neither TentativeRoughFix cannot solve feature selection (~5% of all models in our experiments) and function assigns NA (not available) to these observations. Observe that all these steps are nested in a while loop in order to iterated for a number of times (defined at the beginning of this script by the parameter **max_iterations**). At each iteration, the selected features by Boruta are eliminated in order to integrate the backward recursive elimination procedure into our procedure. 
+Now, we describe the main function for feature analysis. This includes the execution of Boruta (which is run multiple times if the first try do not give a solution), accompained by the **TentativeRoughFix** to unjam Boruta in complex cases. The latter simplifies feature selection significance test when Boruta cannot give a proper solution. After these steps, the random forest (RF) algorithm is executed. This is done thought the [ranger](https://github.com/imbs-hl/ranger) library, which implements an efficient version of RF. Note that it is executed with the "confirmed" important features identified by Boruta and variables importance scores are derived in this step (via permutation). After that, class probabilities are also calculated and extracted from the RF model to end the pipeline collecting accuracy metrics and cross validation test results. In exceptional cases neither Boruta and TentativeRoughFix cannot solve feature selection (~5% of all models in our experiments) and function assigns NA (not available) to these observations. Observe that all these steps are nested in a while loop in order to iterate a specified number of times (in the beginning a parameter called **max_iterations** controls the number of iterations). At each iteration, the selected features by Boruta are eliminated in the next iteration to integrate the backward recursive elimination procedure into our methodology. 
 
 ```{r eval=F}
 boruta.wrapper <- function(x,max.runs=100,max_iterations=10){
@@ -512,7 +512,7 @@ find.nearest <- function(x){
 }
 ```
 
-A final simply but needed function was coordinates extraction. It was created to derive them easily in other funcitons.
+A final simply but needed function was coordinates extraction. It was created to derive easily when is applied to other more complex functions.
 
 ```{r}
 codes.coordinates <- function(x){
