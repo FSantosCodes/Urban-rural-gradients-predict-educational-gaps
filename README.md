@@ -98,7 +98,7 @@ max_runs <- 100
 max_iterations <- 10 
 ```
 
-A final set of parameters are used to control and restart processing from a specific spatial point (or high school location). To identify which point, users should explore the output folder and identify the number of the csv file saved. Advice that AFAC database may consume ~25 GB of RAM just to load into the environment, then the number of cores should be decided wisely to avoid overflow:
+A final set of parameters are used to control and restart processing from a specific spatial point (or high school location). To identify which point, users should explore the output folder and identify the number of the csv file saved. Advice that AFAC database may consume ~25 GB of RAM just to load into the environment, then the number of cores should be decided wisely to avoid a memory overflow:
 
 ```{r eval=F}
 #cores to use
