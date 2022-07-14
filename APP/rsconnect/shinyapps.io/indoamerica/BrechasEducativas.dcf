@@ -1,0 +1,13 @@
+name: BrechasEducativas
+title: BrechasEducativas
+username:
+account: indoamerica
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 5776243
+bundleId: 5642454
+url: https://indoamerica.shinyapps.io/BrechasEducativas/
+when: 1646405890.66962
+lastSyncTime: 1646405890.66962
+asMultiple: FALSE
+asStatic: FALSE
