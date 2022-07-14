@@ -16,7 +16,7 @@ To organize this report, here is described where to get input and output files, 
 
 * **scripts**: located in this repository, this folder contains the scripts used for processing; and
 
-* **shinyApp**: located in this repository, this folder contains the source code of the web app used for visualize outputs (in development).
+* **shinyApp**: located in this repository, this folder contains the source code of the web app used for visualize outputs (in spanish).
 
 The next sections describes with detail the structure and relevant code chunks of the scripts, using as example the Academic Environment (AE) theme group.
 
